@@ -70,8 +70,8 @@ function generateUrl(data) {
 	const fixedTag = encodeURIComponent(data.tag);
 
 	let url = modeSwitch.checked
-		? "https://splendid-groovy-feverfew.glitch.me/valorant-puuid"
-		: "https://splendid-groovy-feverfew.glitch.me/valorant";
+		? "https://valorantrank-tan.vercel.app/valorant-puuid"
+		: "https://valorantrank-tan.vercel.app/valorant";
 	url += "/" + data.region;
 	url += modeSwitch.checked
 		? "/" + data.puuid
