@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'VALORANT';
-    src: url('./fonts/VALORANT-Regular.woff') format('woff');
+    src: url('./fonts/VALORANT-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,7 +18,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #111111;
+    background-color: #ff4654;
     color: #ffffff;
 }
 
