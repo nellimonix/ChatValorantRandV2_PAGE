@@ -1,12 +1,6 @@
 // Файл: src/App.js (модифицированный для работы без внешних изображений)
 import React, { useState } from 'react';
-
-// Компонент для замены изображения
-const ValorantLogo = () => (
-    <div className="w-12 h-12 bg-valorant-red rounded-lg flex items-center justify-center text-white font-bold">
-        V
-    </div>
-);
+import valorantLogo from './images/valorant-logo.png';
 
 function App() {
     const [isPuuidMode, setIsPuuidMode] = useState(false);
@@ -139,10 +133,8 @@ function App() {
             <div className="w-full max-w-md bg-valorant-darkGray rounded-lg shadow-xl overflow-hidden">
                 {/* Header */}
                 <div className="bg-valorant-black p-5 flex items-center justify-center flex-col">
-                    {/* Заменяем <img> на наш компонент */}
-                    <ValorantLogo />
-                    {/* Используем специальный класс для шрифта */}
-                    <h1 className="valorant-font-placeholder text-valorant-red text-2xl">VALORANT RANK CHAT</h1>
+                    <img src={valorantLogo} alt="Valorant Logo" className="w-12 h-12 mb-2" />
+                    <h1 className="title-valorant text-valorant-red text-2xl">VALORANT RANK CHAT</h1>
                 </div>
 
                 {/* Form */}
