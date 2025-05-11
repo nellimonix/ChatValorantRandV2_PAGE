@@ -1,0 +1,177 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 20px;
+	display: flex; /* Added for vertical centering */
+	justify-content: center; /* Added for vertical centering */
+	min-height: 100vh; /* Added for full viewport height */
+}
+
+.container {
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 10px;
+}
+
+label {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+#nameTag {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#puuid {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#generatedUrl {
+	font-weight: bold;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: lightgrey;
+	color: black;
+}
+
+#generatedTextContainer {
+	display: flex; /* Added for inline display of text and icon */
+	align-items: center; /* Added for vertical alignment of icon */
+}
+
+#exampleResponse {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: blueviolet;
+	color: white;
+}
+
+#copyIcon {
+	cursor: pointer; /* Set cursor to pointer on hover */
+	margin-left: 10px; /* Add margin for spacing */
+}
+
+#githubButton {
+	padding-top: 10px;
+}
+
+#exampleResponse {
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+/* Tooltip container */
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	width: 120px;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+	content: " ";
+	position: absolute;
+	top: 100%; /* At the bottom of the tooltip */
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 30px; /* 50% of original width */
+	height: 17px; /* 50% of original height */
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: 0.4s;
+	border-radius: 17px; /* 50% of original border-radius */
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 13px; /* 50% of original height */
+	width: 13px; /* 50% of original width */
+	left: 2px; /* Adjusted for smaller size */
+	bottom: 2px; /* Adjusted for smaller size */
+	background-color: white;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+input:checked + .slider {
+	background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+	transform: translateX(13px); /* Adjusted for smaller size */
+}
+
+.toggle-container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #f0f0f0;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.toggle-container label {
+	margin-right: 10px;
+	font-weight: bold;
+}

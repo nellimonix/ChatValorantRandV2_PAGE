@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chat-Valorant-Rank</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Chat-Valorant-Rank</h1>
+            <div class="toggle-container">
+                <label for="modeSwitch">PUUID Mode</label>
+                <label class="switch">
+                    <input type="checkbox" id="modeSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="form-group" id="nameTagGroup">
+                <input
+                    type="text"
+                    id="nameTag"
+                    placeholder="Enter Name#Tag"
+                    required
+                />
+            </div>
+            <div class="form-group" id="puuidGroup" style="display: none;">
+                <input
+                    type="text"
+                    id="puuid"
+                    placeholder="Enter PUUID"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label for="region">Region:</label>
+                <select id="region">
+                    <option value="ap">Asia/Pacific</option>
+                    <option value="br">Brazil</option>
+                    <option value="eu">Europe</option>
+                    <option value="kr">Korea</option>
+                    <option value="latam">Latin America</option>
+                    <option value="na">North America</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hideUsername">Hide username in response</label>
+                <input type="checkbox" id="hideUsername" />
+            </div>
+            <div class="form-group">
+                <label for="showRRChange">Show RR change in response</label>
+                <input type="checkbox" id="showRRChange" />
+            </div>
+            <div class="form-group">
+                <label for="uniqueColor"><div class="tooltip">Colored response<span class="tooltiptext">/me on Twitch</span></div></label>
+                <input type="checkbox" id="uniqueColor" />
+            </div>
+            <div class="form-group">
+                <label for="platform">Platform:</label>
+                <select id="platform">
+                    <option value="nightbot">NightBot</option>
+                    <option value="streamelements">StreamElements</option>
+                    <option value="fossabot">Fossabot</option>
+                    <option value="streamlabs">Streamlabs</option>
+                    <option value="wizebot">WizeBot</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <button id="generateButton">Generate</button>
+            <div id="generatedTextContainer">
+                <p id="generatedUrl"></p>
+                <i class="fas fa-copy" id="copyIcon"></i> </div>
+                <p id="exampleResponse"></p>
+                <div id="githubButton">
+                    <a class="github-button" href="https://github.com/yash1441" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Follow @yash1441 on GitHub">Follow @yash1441</a>
+                    <a class="github-button" href="https://github.com/yash1441/Chat-Valorant-Rank" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-size="large" aria-label="View this Repository">View</a>
+                    <a class="github-button" href="https://github.com/yash1441/Chat-Valorant-Rank/subscription" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch yash1441/Chat-Valorant-Rank on GitHub">Watch</a>
+                    <a class="github-button" href="https://github.com/yash1441/Chat-Valorant-Rank" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star yash1441/Chat-Valorant-Rank on GitHub">Star</a>
+                    <a class="github-button" href="https://github.com/yash1441/Chat-Valorant-Rank/issues" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue yash1441/Chat-Valorant-Rank on GitHub">Issue</a>
+                    <a class="github-button" href="https://github.com/sponsors/yash1441" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-heart" data-size="large" aria-label="Sponsor @yash1441 on GitHub">Sponsor</a>
+                </div>
+            </div>
+            
+        </div>
+        <script src="script.js"></script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+    </body>
+</html>
