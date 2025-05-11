@@ -74,8 +74,8 @@ function App() {
         };
 
         let url = isPuuidMode
-            ? 'https://valorantrank-tan.vercel.app/valorant-puuid'
-            : 'https://valorantrank-tan.vercel.app/valorant';
+            ? 'https://api.valorantrank.llimonix.pw/valorant-puuid'
+            : 'https://api.valorantrank.llimonix.pw/valorant';
 
         url += '/' + data.region;
         url += isPuuidMode
