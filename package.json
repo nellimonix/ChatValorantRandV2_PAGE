@@ -2,7 +2,7 @@
   "name": "chat-valorant-rank",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/nellimonix/ChatValorantRankV2",
+  "homepage": "https://nellimonix.github.io/ChatValorantRankV2_PAGE/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
